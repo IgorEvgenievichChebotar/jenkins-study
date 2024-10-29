@@ -15,8 +15,8 @@ FROM alpine:3
 
 COPY --from=builder hello /bin/hello
 
-# Открываем порт 8744
+# Открываем порт 8733
 EXPOSE 8733
 
 # Запуск приложения
-CMD [/bin/hello]
+CMD ["/bin/hello"]
